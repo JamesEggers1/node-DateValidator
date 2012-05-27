@@ -5,7 +5,7 @@
   "description": "A very simple date validator for handling year, month, and day values.  The package works as a node module as well as in a browser.",
   "repository": {
     "type": "git",
-    "url": "git://github.com/JamesEggers1/REST/OF/GIT/PATH"
+    "url": "git://github.com/JamesEggers1/node-DateValidator"
   },
   "main": "./date-valiator.js",
   "engines": {
@@ -14,6 +14,6 @@
   },
   "tags": [ "date", "validation", "browser"],
   "bugs": {
-    "url": "https://github.com/JamesEggers1/REST/OF/GIT/PATH/issues"
+    "url": "https://github.com/JamesEggers1/node-DateValidator/issues"
   }
 }
