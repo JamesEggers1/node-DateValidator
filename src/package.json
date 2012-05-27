@@ -1,0 +1,19 @@
+{
+  "name": "DateValidator",
+  "version": "0.0.1",
+  "author": "James Eggers <james.r.eggers@gmail.com> (http://www.jamesreggers.com/)",
+  "description": "A very simple date validator for handling year, month, and day values.  The package works as a node module as well as in a browser.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/JamesEggers1/REST/OF/GIT/PATH"
+  },
+  "main": "./date-valiator.js",
+  "engines": {
+    "node": "*"
+    , "web": "*"
+  },
+  "tags": [ "date", "validation", "browser"],
+  "bugs": {
+    "url": "https://github.com/JamesEggers1/REST/OF/GIT/PATH/issues"
+  }
+}

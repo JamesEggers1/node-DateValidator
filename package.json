@@ -1,0 +1,9 @@
+{
+    "name": "date-validator"
+  , "version": "0.0.1"
+  , "private": true
+  , "dependencies": {
+	"mocha": ">=0.13.0"
+	, "should": ">=0.5.1"
+  }
+}
