@@ -7,7 +7,7 @@
     "type": "git",
     "url": "git://github.com/JamesEggers1/node-DateValidator"
   },
-  "main": "./src/date-valiator.js",
+  "main": "./src/date-validator",
   "engines": {
     "node": "*"
   },

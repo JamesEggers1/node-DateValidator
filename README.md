@@ -7,6 +7,12 @@ The DateValidator project is to create a simple Date validator for both client-s
 
 Coming Soon
 
+## Testing the Package ##
+
+Once the package is installed, you can run the unit tests associated with the package also using NPM.
+
+    npm test DateValidator
+
 ## Usage ##
 
 Coming Soon
