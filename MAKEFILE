@@ -1,0 +1,8 @@
+SHELL := /bin/bash
+
+test:
+	@npm install mocha
+	@npm install should
+	@node_modules/mocha/bin/mocha tests/date-validator-tests.js
+
+.PHONY: test
