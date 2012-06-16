@@ -17,20 +17,28 @@ Once the package is installed, you can run the unit tests associated with the pa
 
 DateValidator at the moment provides an object with a single method `validate`.  The `validate` method expects a year, month, and day string parameters and will validate based on such.
 
-    var date_validator = require("DateValidator").DateValidator;
-	var is_valid = date_validator.validate("2012", "12", "31"); //true
-	
+```javascript
+var date_validator = require("DateValidator").DateValidator;
+var is_valid = date_validator.validate("2012", "12", "31"); //true
+```
+
 ## Web Usage ##
 
 DateValidator can be used in both Node.js and client-side/Web Browser environments.  Below is an example for using the DateValdiator in the web browser.
 
 #### Html ####
-    <script type="text/javascript" src="path/to/date-validator.js"></script>
+
+```html
+<script type="text/javascript" src="path/to/date-validator.js"></script>
+```
 
 #### JavaScript ####
-    var validator = DateValidator;
-	var is_valid = date_validator.validate("2012", "12", "31"); //true
-	
+
+```javascript
+var validator = DateValidator;
+var is_valid = date_validator.validate("2012", "12", "31"); //true
+```
+
 By default, the DateValidator module places itself into the global scope in the browser.  If you would prefer to NOT have it be directly attached to the `window` object, you can add your own `namespace` at the top of the date-validator.js file.
 	
 ## False Conditions ##
