@@ -22,9 +22,15 @@ var date_validator = require("DateValidator").DateValidator;
 var is_valid = date_validator.validate("2012", "12", "31"); //true
 ```
 
-## Web Usage ##
+## Using Luhn Client-Side ##
+In addition to being usable as a Node.js module, the validator can also be used client-side in the user's web browser.  When you install `DateValidator` using `npm`, instructions will appear how to install it for client-side JavaScript consumption.
 
-DateValidator can be used in both Node.js and client-side/Web Browser environments.  Below is an example for using the DateValdiator in the web browser.
+While you can copy the `date-validator.js` file from the module's installation directory under `node_modles`, an automated script has been provided to assist you in this copy process and to make it more streamlined.  To do a client-side install, simply type the following `npm` command:
+
+    npm run-script DateValidator client-install
+
+Once you run that command, you'll be prompted to provide the path to which to install `date-validator.js` for use by your client-side JavaScript.  At that point, you can reference the file in your html and JavaScript code as shown below.
+
 
 #### Html ####
 
@@ -50,7 +56,7 @@ The `validate` method will return `false` for the following conditions:
 - if the month is greater than 12
 - if the day is invalid for the provided month (i.e. Feb 31);
 
-## License ##
+## License (MIT) ##
 Copyright (c) 2012 James Eggers
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
