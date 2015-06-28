@@ -22,7 +22,7 @@ var date_validator = require("DateValidator").DateValidator;
 var is_valid = date_validator.validate("2012", "12", "31"); //true
 ```
 
-## Using Luhn Client-Side ##
+## Using DateValidator Client-Side ##
 In addition to being usable as a Node.js module, the validator can also be used client-side in the user's web browser.  When you install `DateValidator` using `npm`, instructions will appear how to install it for client-side JavaScript consumption.
 
 While you can copy the `date-validator.js` file from the module's installation directory under `node_modles`, an automated script has been provided to assist you in this copy process and to make it more streamlined.  To do a client-side install, simply type the following `npm` command:
