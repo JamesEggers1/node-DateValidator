@@ -16,7 +16,7 @@
 		"test": "mocha tests/date-validator-tests.js -R spec",
 		"client-install": "node bin/client-install.js",
 		"install": "node bin/client-install-directions.js",
-		"update": "node bin/client-install-directions.js",
+		"update": "node bin/client-install-directions.js"
   },
   "keywords": [ "date", "validation", "browser"],
   "bugs": {
