@@ -1,29 +1,32 @@
 {
-  "name": "DateValidator",
-  "version": "1.0.7",
+  "name": "datevalidator",
+  "version": "2.0.0",
   "author": "James Eggers <james.r.eggers@gmail.com> (http://www.jamesreggers.com/)",
   "description": "A very simple date validator for handling year, month, and day values.  The package works as a node module as well as in a browser.",
   "homepage": "https://github.com/JamesEggers1/node-DateValidator",
+  "license": "MIT",
   "repository": {
-    	"type": "git",
-    	"url": "git://github.com/JamesEggers1/node-DateValidator.git"
+    "type": "git",
+    "url": "git://github.com/JamesEggers1/node-DateValidator.git"
   },
   "main": "./src/date-validator",
+  "browser": "./src/date-validator-min.js",
   "engines": {
-    	"node": ">=0.6"
+    "node": ">=0.6"
   },
   "scripts": {
-		"test": "mocha tests/date-validator-tests.js -R spec",
-		"client-install": "node bin/client-install.js",
-		"install": "node bin/client-install-directions.js",
-		"update": "node bin/client-install-directions.js"
+    "test": "mocha tests/date-validator-tests.js -R spec"
   },
-  "keywords": [ "date", "validation", "browser"],
+  "keywords": [
+    "date",
+    "validation",
+    "browserify"
+  ],
   "bugs": {
-    	"url": "https://github.com/JamesEggers1/node-DateValidator/issues"
+    "url": "https://github.com/JamesEggers1/node-DateValidator/issues"
   },
   "devDependencies": {
-		"should" : "0.6.3"
-		, "mocha":"1.2.1"
+    "mocha": "1.21.5",
+    "should": "5.0.1"
   }
 }

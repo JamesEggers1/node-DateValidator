@@ -5,31 +5,27 @@ The DateValidator project is to create a simple Date validator for both client-s
 
 ## Installation ##
 
-    npm install DateValidator
+    npm install datevalidator
 
 ## Testing the Package ##
 
 Once the package is installed, you can run the unit tests associated with the package also using NPM.
 
-    npm test DateValidator
+    npm test datevalidator
 
 ## Node Usage ##
 
-DateValidator at the moment provides an object with a single method `validate`.  The `validate` method expects a year, month, and day string parameters and will validate based on such.
+DateValidator at the moment provides a single method `validate`.  The `validate` method expects a year, month, and day string parameters and will validate based on such.
 
 ```javascript
-var date_validator = require("DateValidator").DateValidator;
+var date_validator = require("DateValidator");
 var is_valid = date_validator.validate("2012", "12", "31"); //true
 ```
 
 ## Using DateValidator Client-Side ##
-In addition to being usable as a Node.js module, the validator can also be used client-side in the user's web browser.  When you install `DateValidator` using `npm`, instructions will appear how to install it for client-side JavaScript consumption.
+DateValidator is also compatible with client-side JavaScript development by way of Browserify. To Learn more about Browserify, go to http://browserify.org/.
 
-While you can copy the `date-validator.js` file from the module's installation directory under `node_modles`, an automated script has been provided to assist you in this copy process and to make it more streamlined.  To do a client-side install, simply type the following `npm` command:
-
-    npm run-script DateValidator client-install
-
-Once you run that command, you'll be prompted to provide the path to which to install `date-validator.js` for use by your client-side JavaScript.  At that point, you can reference the file in your html and JavaScript code as shown below.
+DateValidator 1.0.7 provides a more globally accessible way of using DateValidator outside of Browserify. The algorithm is the same as of v2.0; however, the client-side instructions are different and provided with that version.
 
 
 #### Html ####
@@ -57,7 +53,7 @@ The `validate` method will return `false` for the following conditions:
 - if the day is invalid for the provided month (i.e. Feb 31);
 
 ## License (MIT) ##
-Copyright (c) 2012 James Eggers
+Copyright (c) 2015 James Eggers
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

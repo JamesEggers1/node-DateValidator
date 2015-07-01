@@ -2,7 +2,7 @@
 
 var mocha = require("mocha")
 	, should = require("should")
-	, validator = require("../src/date-validator").DateValidator;
+	, validator = require("../src/date-validator");
 	
 describe("Date Validator", function(){
 	
